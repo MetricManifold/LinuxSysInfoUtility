@@ -77,12 +77,23 @@ long OperatingSystem::get_uptime() const
  */
 std::string OperatingSystem::to_string() const
 {
+	int day, hour, min, second;
+	int constexpr
+		day_s = 86400,
+		hour_s = 3600,
+		min_s = 60;
+
+	day = uptime / day_s;
+	hour = (uptime - day * day_s) / hour_s;
+	min = (uptime - day * day_s - hour * hour_s) / min_s;
+	second = uptime - day * day_s - hour * hour_s - min * min_s;
+
 	std::stringstream ss;
 	ss << "Operating system information ";
 	ss << "\n\tSystem name is " << system_name;
 	ss << "\n\tOperating system release name is " << os_release;
 	ss << "\n\tOperating system release version is " << os_version;
-	ss << "\n\tThe system has been operating for " << uptime << " seconds";
+	ss << "\n\tThe system has been operating for " << day << "d:" << hour << "h:" << min << "m:" << second << "s";
 
 	return ss.str();
 }
