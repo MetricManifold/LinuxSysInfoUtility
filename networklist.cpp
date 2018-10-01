@@ -5,8 +5,6 @@
  *					computer
  */
 
-#pragma once
-
 #include "networklist.h"
 
 /*

@@ -4,8 +4,6 @@
  * Description:		Processor contains the data associated with a process
  */
 
-#pragma once
-
 #include "process.h"
 
 /*

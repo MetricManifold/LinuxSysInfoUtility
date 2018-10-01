@@ -5,8 +5,6 @@
  *					current memory usage and size
  */
 
-#pragma once
-
 #include "memory.h"
 
 /*

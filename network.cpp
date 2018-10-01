@@ -4,8 +4,6 @@
  * Description:		Network contains the information associated with an interface
  */
 
-#pragma once
-
 #include "network.h"
 
 /*

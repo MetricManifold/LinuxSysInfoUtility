@@ -35,7 +35,7 @@ void util::print_all(std::ostream &out)
  */
 void util::print_hostname(std::ostream &out)
 {
-	out	<< HostName().to_string() << std::endl;
+	out << HostName().to_string() << std::endl;
 }
 
 /*
@@ -44,7 +44,7 @@ void util::print_hostname(std::ostream &out)
  */
 void util::print_memory(std::ostream &out)
 {
-	out	<< Memory().to_string() << std::endl;
+	out << Memory().to_string() << std::endl;
 }
 
 /*
@@ -53,7 +53,7 @@ void util::print_memory(std::ostream &out)
  */
 void util::print_networklist(std::ostream &out)
 {
-	out	<< NetworkList().to_string() << std::endl;
+	out << NetworkList().to_string() << std::endl;
 }
 
 /*
@@ -62,7 +62,7 @@ void util::print_networklist(std::ostream &out)
  */
 void util::print_os(std::ostream &out)
 {
-	out	<< OperatingSystem().to_string() << std::endl;
+	out << OperatingSystem().to_string() << std::endl;
 }
 
 /*
@@ -71,7 +71,7 @@ void util::print_os(std::ostream &out)
  */
 void util::print_processlist(std::ostream &out)
 {
-	out	<< ProcessList().to_string() << std::endl;
+	out << ProcessList().to_string() << std::endl;
 }
 
 /*
@@ -80,7 +80,7 @@ void util::print_processlist(std::ostream &out)
  */
 void util::print_processor(std::ostream &out)
 {
-	out	<< Processor().to_string() << std::endl;
+	out << Processor().to_string() << std::endl;
 }
 
 /*

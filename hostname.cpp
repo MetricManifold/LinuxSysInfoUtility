@@ -4,8 +4,6 @@
  * Description:		HostName class contains the hostname information for the computer
  */
 
-#pragma once
-
 #include "hostname.h"
 
 /*

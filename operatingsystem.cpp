@@ -5,8 +5,6 @@
  *					to the operating system on the computer
  */
 
-#pragma once
-
 #include "operatingsystem.h"
 
 /*

@@ -5,8 +5,6 @@
  *					about the system processor
  */
 
-#pragma once
-
 #include "processor.h"
 
  /*
