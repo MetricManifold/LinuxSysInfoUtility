@@ -31,4 +31,4 @@ public:
 	long get_uptime() const;
 
 	std::string to_string() const;
-};
+	

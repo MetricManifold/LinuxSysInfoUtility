@@ -140,6 +140,4 @@ void util::print_menu(std::ostream &out, std::istream &in)
 		}
 	}
 }
-
-
-
+	

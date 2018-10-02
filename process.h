@@ -35,4 +35,4 @@ public:
 
 	std::string to_string() const;
 };
-
+	

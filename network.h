@@ -27,4 +27,4 @@ public:
 	std::string get_mac_address() const;
 
 	std::string to_string() const;
-};
+	

@@ -95,4 +95,4 @@ std::string OperatingSystem::to_string() const
 
 	return ss.str();
 }
-
+	

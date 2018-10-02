@@ -66,3 +66,4 @@ std::string Network::to_string() const
 
 	return ss.str();
 }
+	

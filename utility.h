@@ -22,4 +22,4 @@ namespace util
 	void print_processor(std::ostream &out);
 	void print_menu(std::ostream &out, std::istream &in);
 }
-
+	
