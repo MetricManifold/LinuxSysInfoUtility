@@ -4,10 +4,11 @@ RM=rm
 OBJS=hostname.o hostname_main.o  \
 	hostname.o hostname_main.o  \
 	memory.o memory_main.o  \
-	operatingsystem.o hostname_main.o  \
+	operatingsystem.o operatingsystem_main.o  \
 	process.o processlist.o processlist_main.o  \
-	network.o networklist.o hostname_main.o  \
-	processor.o hostname_main.o
+	network.o networklist.o networklist_main.o  \
+	processor.o processor_main.o
+SH=hostname memory operatingsystem processlist networklist processor
 
 all: hostname memory operatingsystem processlist networklist processor
 
@@ -66,7 +67,7 @@ processor.o: ../processor.cpp ../processor.h
 
 # Clean command
 clean:
-	$(RM) *.o
+	$(RM) $(OBJS) $(SH)
 
 
 
