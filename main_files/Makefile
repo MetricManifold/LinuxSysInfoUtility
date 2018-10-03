@@ -1,14 +1,18 @@
 CPP_VERSION_FLAGS=-std=c++17
 RM=rm
 
-OBJS=hostname.o hostname_main.o  \
+OBJS_ALL=hostname.o hostname_main.o  \
 	hostname.o hostname_main.o  \
 	memory.o memory_main.o  \
 	operatingsystem.o operatingsystem_main.o  \
 	process.o processlist.o processlist_main.o  \
 	network.o networklist.o networklist_main.o  \
 	processor.o processor_main.o
-SH=hostname memory operatingsystem processlist networklist processor
+SRC=$(shell ls *_main.cpp)
+BIN=$(subst _main.cpp,,$(SRC))
+OBJS=$(shell ls *.o)
+
+RM=rm -f
 
 all: hostname memory operatingsystem processlist networklist processor
 
@@ -28,7 +32,7 @@ memory.o: ../memory.cpp ../memory.h
 	g++ $(CPP_VERSION_FLAGS) -c ../memory.cpp
 
 
-# OperatingSystem
+# Operatin
 operatingsystem: operatingsystem.o operatingsystem_main.o
 	g++ $(CPP_VERSION_FLAGS) -o operatingsystem operatingsystem.o operatingsystem_main.o
 
@@ -67,7 +71,7 @@ processor.o: ../processor.cpp ../processor.h
 
 # Clean command
 clean:
-	$(RM) $(OBJS) $(SH)
+	$(RM) $(OBJS) $(BIN)
 
 
 
